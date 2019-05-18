@@ -7,17 +7,17 @@ var (
 	falsy  = []string{"0", "false", "f", "no", "n"}
 )
 
-// Truthy return truthy value list
+// Truthy return the truthy value list
 func Truthy() []string {
 	return truthy
 }
 
-// Falsy return falsy value list
+// Falsy return the falsy value list
 func Falsy() []string {
 	return falsy
 }
 
-// IsTruthy check truthy value
+// IsTruthy check the value is truthy
 func IsTruthy(s string) bool {
 	for _, t := range truthy {
 		if s == t {
@@ -27,7 +27,7 @@ func IsTruthy(s string) bool {
 	return false
 }
 
-// IsFalsy check falsy value
+// IsFalsy check the value is falsy
 func IsFalsy(s string) bool {
 	for _, f := range falsy {
 		if s == f {
